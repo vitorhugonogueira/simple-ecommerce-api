@@ -5,105 +5,105 @@
       "name": "Laptop Pro OUOOOOOOOO",
       "price": 1200,
       "description": "Powerful laptop for professionals.",
-      "imageUrl": "laptop.jpg"
+      "imageUrl": "/laptop_pro.png"
     },
     {
       "id": "9c8b9d1e-3a0f-4b1a-9b3c-7d6e5f4a2b1c",
       "name": "Wireless Mouse",
       "price": 25,
       "description": "Ergonomic wireless mouse.",
-      "imageUrl": "mouse.jpg"
+      "imageUrl": "/wireless_mouse.png"
     },
     {
       "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
       "name": "Mechanical Keyboard",
       "price": 100,
       "description": "High-quality mechanical keyboard.",
-      "imageUrl": "keyboard.jpg"
+      "imageUrl": "/mechanical_keyboard.png"
     },
     {
       "id": "a1b2c3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6",
       "name": "4K Monitor",
       "price": 350,
       "description": "Ultra HD monitor for crisp visuals.",
-      "imageUrl": "monitor.jpg"
+      "imageUrl": "/4k_monitor.png"
     },
     {
       "id": "f0e1d2c3-b4a5-f6e7-d8c9-b0a1f2e3d4c5",
       "name": "Bluetooth Headphones",
       "price": 80,
       "description": "Noise-canceling Bluetooth headphones.",
-      "imageUrl": "headphones.jpg"
+      "imageUrl": "/bluetooth_headphones.png"
     },
     {
       "id": "123e4567-e89b-12d3-a456-426614174000",
       "name": "External SSD",
       "price": 150,
       "description": "Fast and portable external SSD.",
-      "imageUrl": "ssd.jpg"
+      "imageUrl": "/external_ssd.png"
     },
     {
       "id": "abcdef12-3456-7890-abcd-ef1234567890",
       "name": "Smart Watch",
       "price": 200,
       "description": "Smart watch with fitness tracking.",
-      "imageUrl": "smartwatch.jpg"
+      "imageUrl": "/smart_watch.png"
     },
     {
       "id": "fedcba98-7654-3210-fedc-ba9876543210",
       "name": "Tablet",
       "price": 300,
       "description": "Portable tablet for entertainment and productivity.",
-      "imageUrl": "tablet.jpg"
+      "imageUrl": "/tablet.png"
     },
     {
       "id": "00000000-0000-0000-0000-000000000009",
       "name": "Gaming Chair",
       "price": 250,
       "description": "Ergonomic gaming chair for long sessions.",
-      "imageUrl": "gamingchair.jpg"
+      "imageUrl": "/gaming_chair.png"
     },
     {
       "id": "11111111-1111-1111-1111-111111111110",
       "name": "USB Hub",
       "price": 30,
       "description": "Multiport usb hub.",
-      "imageUrl": "usbhub.jpg"
+      "imageUrl": "/usb_hub.png"
     },
     {
       "id": "22222222-2222-2222-2222-222222222211",
       "name": "Webcam",
       "price": 60,
       "description": "HD webcam for video calls.",
-      "imageUrl": "webcam.jpg"
+      "imageUrl": "/web_cam.png"
     },
     {
       "id": "33333333-3333-3333-3333-333333333312",
       "name": "Printer",
       "price": 120,
       "description": "Wireless all-in-one printer.",
-      "imageUrl": "printer.jpg"
+      "imageUrl": "/printer.png"
     },
     {
       "id": "44444444-4444-4444-4444-444444444413",
       "name": "Router",
       "price": 70,
       "description": "High-speed wireless router.",
-      "imageUrl": "router.jpg"
+      "imageUrl": "/router.png"
     },
     {
       "id": "55555555-5555-5555-5555-555555555514",
       "name": "VR Headset",
       "price": 400,
       "description": "Virtual reality headset for immersive experiences.",
-      "imageUrl": "vrheadset.jpg"
+      "imageUrl": "/vr_headset.png"
     },
     {
       "id": "66666666-6666-6666-6666-666666666615",
       "name": "Portable Speaker",
       "price": 50,
       "description": "Bluetooth portable speaker.",
-      "imageUrl": "speaker.jpg"
+      "imageUrl": "/portable_speaker.png"
     }
   ],
   "stock": [
