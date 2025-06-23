@@ -19,18 +19,20 @@ module.exports = (req, res) => {
   const { url } = req;
 
   const parts = url.split('/');
-  const resource = parts[2]; // (ex: 'posts', 'users')
+  res.status(200).json({ message: 'test', parts: parts });
+  return;
+  // const resource = parts[2]; // (ex: 'posts', 'users')
 
-  if (resource && data[resource]) {
-    // res.status(200).json(data[resource]);
-    res.status(200).json({ message: 'There is info for ' + resource + '!' });
-    return;
-  }
+  // if (resource && data[resource]) {
+  //   // res.status(200).json(data[resource]);
+  //   res.status(200).json({ message: 'There is info for ' + resource + '!' });
+  //   return;
+  // }
 
-  if (url === '/api') {
-    res.status(200).json({ message: 'Welcome to the Simple Eccomerce API!' });
-    return;
-  }
+  // if (url === '/api') {
+  //   res.status(200).json({ message: 'Welcome to the Simple Eccomerce API!' });
+  //   return;
+  // }
 
-  res.status(404).send('Recurso não encontrado. Tente /api/seu_recurso');
+  // res.status(404).send('Recurso não encontrado. Tente /api/seu_recurso');
 };
