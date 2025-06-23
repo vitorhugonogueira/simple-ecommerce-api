@@ -20,17 +20,19 @@ module.exports = (req, res) => {
   const cleanPath = requestUrl.pathname;
   const parts = cleanPath.split('/');
 
-  const resource = parts[2]; // (ex: 'products', 'categories')
+  res.status(404).send('Test.');
 
-  if (resource && data[resource]) {
-    res.status(200).json(data[resource]);
-    return;
-  }
+  // const resource = parts[2]; // (ex: 'products', 'categories')
 
-  if (url === '/api') {
-    res.status(200).json({ message: 'Welcome to the Simple Eccomerce API!' });
-    return;
-  }
+  // if (resource && data[resource]) {
+  //   res.status(200).json(data[resource]);
+  //   return;
+  // }
 
-  res.status(404).send('Recurso não encontrado. Tente /api/seu_recurso');
+  // if (url === '/api') {
+  //   res.status(200).json({ message: 'Welcome to the Simple Ecommerce API!' });
+  //   return;
+  // }
+
+  // res.status(404).send('Not found by Simple Eccomerce API.');
 };
