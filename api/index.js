@@ -16,24 +16,21 @@ module.exports = (req, res) => {
     return;
   }
 
-  const requestUrl = new URL(req.url, 'http://example.com');
+  const requestUrl = new URL(req.url, 'http://e.com');
   const cleanPath = requestUrl.pathname;
-
   const parts = cleanPath.split('/');
-  res.status(200).json({ message: 'test', parts: parts });
-  return;
-  // const resource = parts[2]; // (ex: 'posts', 'users')
 
-  // if (resource && data[resource]) {
-  //   // res.status(200).json(data[resource]);
-  //   res.status(200).json({ message: 'There is info for ' + resource + '!' });
-  //   return;
-  // }
+  const resource = parts[2]; // (ex: 'products', 'categories')
 
-  // if (url === '/api') {
-  //   res.status(200).json({ message: 'Welcome to the Simple Eccomerce API!' });
-  //   return;
-  // }
+  if (resource && data[resource]) {
+    res.status(200).json(data[resource]);
+    return;
+  }
 
-  // res.status(404).send('Recurso não encontrado. Tente /api/seu_recurso');
+  if (url === '/api') {
+    res.status(200).json({ message: 'Welcome to the Simple Eccomerce API!' });
+    return;
+  }
+
+  res.status(404).send('Recurso não encontrado. Tente /api/seu_recurso');
 };
