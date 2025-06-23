@@ -27,12 +27,10 @@ module.exports = (req, res) => {
     return;
   }
 
-  res.status(404).send('Test.');
+  if (resource && data[resource]) {
+    res.status(200).json(data[resource]);
+    return;
+  }
 
-  // if (resource && data[resource]) {
-  //   res.status(200).json(data[resource]);
-  //   return;
-  // }
-
-  // res.status(404).send('Not found by Simple Eccomerce API.');
+  res.status(404).send('Not found by Simple Eccomerce API.');
 };
