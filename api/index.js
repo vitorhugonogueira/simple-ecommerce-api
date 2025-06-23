@@ -20,9 +20,8 @@ module.exports = (req, res) => {
   const cleanPath = requestUrl.pathname;
   const parts = cleanPath.split('/');
 
+  const resource = parts[2]; // (ex: 'products', 'categories')
   res.status(404).send('Test.');
-
-  // const resource = parts[2]; // (ex: 'products', 'categories')
 
   // if (resource && data[resource]) {
   //   res.status(200).json(data[resource]);
