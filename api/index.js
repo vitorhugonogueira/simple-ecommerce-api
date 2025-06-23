@@ -16,9 +16,10 @@ module.exports = (req, res) => {
     return;
   }
 
-  const { url } = req;
+  const requestUrl = new URL(req.url, 'http://example.com');
+  const cleanPath = requestUrl.pathname;
 
-  const parts = url.split('/');
+  const parts = cleanPath.split('/');
   res.status(200).json({ message: 'test', parts: parts });
   return;
   // const resource = parts[2]; // (ex: 'posts', 'users')
