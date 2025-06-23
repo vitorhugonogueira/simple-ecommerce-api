@@ -23,13 +23,14 @@ module.exports = (req, res) => {
   const resource = parts[2]; // (ex: 'products', 'categories')
   res.status(404).send('Test.');
 
+
+  if (cleanPath === '/api') {
+    res.status(200).json({ message: 'Welcome to the Simple Ecommerce API!' });
+    return;
+  }
+
   // if (resource && data[resource]) {
   //   res.status(200).json(data[resource]);
-  //   return;
-  // }
-
-  // if (url === '/api') {
-  //   res.status(200).json({ message: 'Welcome to the Simple Ecommerce API!' });
   //   return;
   // }
 
