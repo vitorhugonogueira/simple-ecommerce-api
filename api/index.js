@@ -22,7 +22,8 @@ module.exports = (req, res) => {
   const resource = parts[2]; // (ex: 'posts', 'users')
 
   if (resource && data[resource]) {
-    res.status(200).json(data[resource]);
+    // res.status(200).json(data[resource]);
+    res.status(200).json({ message: 'There is info for ' + resource + '!' });
     return;
   }
 
