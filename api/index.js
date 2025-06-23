@@ -16,7 +16,7 @@ module.exports = (req, res) => {
     return;
   }
 
-  const requestUrl = new URL(req.url, 'http://e.com');
+  const requestUrl = new URL(req.url, 'http://example.com');
   const cleanPath = requestUrl.pathname;
   const parts = cleanPath.split('/');
 
