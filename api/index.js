@@ -41,21 +41,25 @@ module.exports = (req, res) => {
 
   if (cleanPath.includes('/api/products/')) {
     const id = parts[3];
-    if (data.products[id]) {
-      res.status(200).json(data.products[id]);
-    } else {
+    const prod = data.products.find(p => p.id === id);
+    if (!prod) {
       res.status(404).send('Product not found.');
+      return;
     }
+
+    res.status(200).json(prod);
     return;
   }
 
   if (cleanPath.includes('/api/stock/')) {
     const id = parts[3];
-    if (data.stock[id]) {
-      res.status(200).json(data.stock[id]);
-    } else {
+    const prod = data.stock.find(p => p.id === id);
+    if (!prod) {
       res.status(404).send('Stock not found.');
+      return;
     }
+
+    res.status(200).json(prod);
     return;
   }
 
