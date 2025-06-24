@@ -18,9 +18,6 @@ module.exports = (req, res) => {
 
   const requestUrl = new URL(req.url, 'http://example.com');
   const cleanPath = requestUrl.pathname;
-  const parts = cleanPath.split('/');
-
-  const resource = parts[2]; // (ex: 'products', 'categories')
 
   if (cleanPath === '/api') {
     res.status(200).json({ message: 'Welcome to the Simple Ecommerce API!' });
@@ -40,6 +37,29 @@ module.exports = (req, res) => {
     return;
   }
 
+  const parts = cleanPath.split('/');
+
+  if (cleanPath.includes('/api/products/')) {
+    const id = parts[3];
+    if (data.products[id]) {
+      res.status(200).json(data.products[id]);
+    } else {
+      res.status(404).send('Product not found.');
+    }
+    return;
+  }
+
+  if (cleanPath.includes('/api/stock/')) {
+    const id = parts[3];
+    if (data.stock[id]) {
+      res.status(200).json(data.stock[id]);
+    } else {
+      res.status(404).send('Stock not found.');
+    }
+    return;
+  }
+
+  const resource = parts[2]; // (ex: 'categories')
   if (resource && data[resource]) {
     res.status(200).json(data[resource]);
     return;
