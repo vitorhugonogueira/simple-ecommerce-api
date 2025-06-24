@@ -22,9 +22,6 @@ module.exports = (req, res) => {
 
   const resource = parts[2]; // (ex: 'products', 'categories')
 
-  res.status(400).send('========>' + cleanPath);
-  return;
-
   if (cleanPath === '/api') {
     res.status(200).json({ message: 'Welcome to the Simple Ecommerce API!' });
     return;
